@@ -1,4 +1,10 @@
 {
   "item.hornsmod.ruby": "Ruby",
-  "item.hornsmod.raw_ruby": "Raw Ruby"
+  "item.hornsmod.raw_ruby": "Raw Ruby",
+
+  "block.hornsmod.ruby_block": "Block of Ruby",
+  "block.hornsmod.ruby_ore": "Ruby Ore",
+  "block.hornsmod.deepslate_ruby_ore": "Deepslate Ruby Ore",
+
+  "itemGroup.hornsmodtab": "Horn's Mod"
 }

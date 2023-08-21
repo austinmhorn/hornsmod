@@ -14,9 +14,9 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, HornsMod.MODID);
 
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.HORNSMOD_TAB)));
     public static final RegistryObject<Item> RAW_RUBY = ITEMS.register("raw_ruby",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.HORNSMOD_TAB)));
 
     public static void register(IEventBus eventBus)
     {

@@ -1,6 +1,7 @@
 package net.austinmhorn.hornsmod;
 
 import com.mojang.logging.LogUtils;
+import net.austinmhorn.hornsmod.block.ModBlocks;
 import net.austinmhorn.hornsmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraftforge.api.distmarker.Dist;
@@ -27,6 +28,7 @@ public class HornsMod
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
