@@ -2,6 +2,8 @@
 
 Austin Horn's Minecraft 1.19.2 Forge Mod
 
+[Download](https://legacy.curseforge.com/minecraft/mc-mods/horns-mod) on CurseForge
+
 ## What is Horn's Mod?
 
 Horn's Mod is a mod written for the hit game [Minecraft](https://minecraft.net/). It is built on top of the [Minecraft Forge](https://github.com/MinecraftForge) API.
