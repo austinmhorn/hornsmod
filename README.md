@@ -11,15 +11,26 @@ It greatly expands and improves the Minecart system in Minecraft. Adding many ne
 The mod was created and is still currently maintained by the user going by the name **austinmhorn**.
 
 New Ores:
-- Ruby
-- Platinum
-
-New Blocks:
 - Ruby Ore
 - Deepslate Ruby Ore
-- Ruby Block
+- Pink Sapphire Ore
+- Deepslate Pink Sapphire Ore
 - Platinum Ore
 - Deepslate Platinum Ore
+
+New Items:
+- Ruby
+- Pink Sapphire Ingot
+- Platinum Ingot
+
+New Blocks:
+- Ruby Block
+- Pink Sapphire Block
+- Platinum Block
+
+New Blocks:
+- Ruby Block
+- Pink Sapphire Block
 - Platinum Block
 
 ## Issues
