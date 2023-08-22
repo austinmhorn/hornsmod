@@ -1,10 +1,20 @@
 {
   "item.hornsmod.ruby": "Ruby",
   "item.hornsmod.raw_ruby": "Raw Ruby",
+  "item.hornsmod.platinum_ingot": "Platinum Ingot",
+  "item.hornsmod.raw_platinum": "Raw Platinum",
+  "item.hornsmod.pink_sapphire_ingot": "Pink Sapphire Ingot",
+  "item.hornsmod.raw_pink_sapphire": "Raw Pink Sapphire",
 
   "block.hornsmod.ruby_block": "Block of Ruby",
   "block.hornsmod.ruby_ore": "Ruby Ore",
   "block.hornsmod.deepslate_ruby_ore": "Deepslate Ruby Ore",
+  "block.hornsmod.platinum_block": "Block of Platinum",
+  "block.hornsmod.platinum_ore": "Platinum Ore",
+  "block.hornsmod.deepslate_platinum_ore": "Deepslate Platinum Ore",
+  "block.hornsmod.pink_sapphire_block": "Block of Pink Sapphire",
+  "block.hornsmod.pink_sapphire_ore": "Pink Sapphire Ore",
+  "block.hornsmod.deepslate_pink_sapphire_ore": "Deepslate Pink Sapphire Ore",
 
   "itemGroup.hornsmodtab": "Horn's Mod"
 }

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hornsmod:pink_sapphire_block"
+    }
+  ],
+  "result": {
+    "item": "hornsmod:pink_sapphire_ingot",
+    "count": 9
+  }
+}

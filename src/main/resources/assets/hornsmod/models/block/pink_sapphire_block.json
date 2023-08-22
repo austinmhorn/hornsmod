@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "hornsmod:block/pink_sapphire_block"
+  }
+}

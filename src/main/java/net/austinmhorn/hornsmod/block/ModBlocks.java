@@ -35,6 +35,34 @@ public class ModBlocks {
                     .strength(6f).requiresCorrectToolForDrops(),
                     UniformInt.of(3, 7)), ModCreativeModTab.HORNSMOD_TAB);
 
+    public static final RegistryObject<Block> PLATINUM_BLOCK = registerBlock("platinum_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModTab.HORNSMOD_TAB);
+
+    public static final RegistryObject<Block> PLATINUM_ORE = registerBlock("platinum_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops(),
+                    UniformInt.of(3, 7)), ModCreativeModTab.HORNSMOD_TAB);
+
+    public static final RegistryObject<Block> DEEPSLATE_PLATINUM_ORE = registerBlock("deepslate_platinum_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops(),
+                    UniformInt.of(3, 7)), ModCreativeModTab.HORNSMOD_TAB);
+
+    public static final RegistryObject<Block> PINK_SAPPHIRE_BLOCK = registerBlock("pink_sapphire_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModTab.HORNSMOD_TAB);
+
+    public static final RegistryObject<Block> PINK_SAPPHIRE_ORE = registerBlock("pink_sapphire_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops(),
+                    UniformInt.of(3, 7)), ModCreativeModTab.HORNSMOD_TAB);
+
+    public static final RegistryObject<Block> DEEPSLATE_PINK_SAPPHIRE_ORE = registerBlock("deepslate_pink_sapphire_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops(),
+                    UniformInt.of(3, 7)), ModCreativeModTab.HORNSMOD_TAB);
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);

@@ -17,6 +17,14 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModTab.HORNSMOD_TAB)));
     public static final RegistryObject<Item> RAW_RUBY = ITEMS.register("raw_ruby",
             () -> new Item(new Item.Properties().tab(ModCreativeModTab.HORNSMOD_TAB)));
+    public static final RegistryObject<Item> PLATINUM_INGOT = ITEMS.register("platinum_ingot",
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.HORNSMOD_TAB)));
+    public static final RegistryObject<Item> RAW_PLATINUM = ITEMS.register("raw_platinum",
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.HORNSMOD_TAB)));
+    public static final RegistryObject<Item> PINK_SAPPHIRE_INGOT = ITEMS.register("pink_sapphire_ingot",
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.HORNSMOD_TAB)));
+    public static final RegistryObject<Item> RAW_PINK_SAPPHIRE = ITEMS.register("raw_pink_sapphire",
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.HORNSMOD_TAB)));
 
     public static void register(IEventBus eventBus)
     {

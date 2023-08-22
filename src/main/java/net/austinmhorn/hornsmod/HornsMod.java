@@ -3,6 +3,8 @@ package net.austinmhorn.hornsmod;
 import com.mojang.logging.LogUtils;
 import net.austinmhorn.hornsmod.block.ModBlocks;
 import net.austinmhorn.hornsmod.item.ModItems;
+import net.austinmhorn.hornsmod.world.feature.ModConfiguredFeatures;
+import net.austinmhorn.hornsmod.world.feature.ModPlacedFeatures;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -29,6 +31,9 @@ public class HornsMod
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

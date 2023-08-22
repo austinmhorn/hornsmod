@@ -3,6 +3,12 @@
   "values": [
     "hornsmod:ruby_ore",
     "hornsmod:ruby_block",
-    "hornsmod:deepslate_ruby_ore"
+    "hornsmod:deepslate_ruby_ore",
+    "hornsmod:platinum_ore",
+    "hornsmod:platinum_block",
+    "hornsmod:deepslate_platinum_ore",
+    "hornsmod:pink_sapphire_ore",
+    "hornsmod:pink_sapphire_block",
+    "hornsmod:deepslate_pink_sapphire_ore"
   ]
 }
