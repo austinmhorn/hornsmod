@@ -1,6 +1,7 @@
 package net.austinmhorn.hornsmod.block;
 
 import net.austinmhorn.hornsmod.HornsMod;
+import net.austinmhorn.hornsmod.block.custom.GemInfusingStationBlock;
 import net.austinmhorn.hornsmod.item.ModCreativeModTab;
 import net.austinmhorn.hornsmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -63,16 +64,20 @@ public class ModBlocks {
                     .strength(6f).requiresCorrectToolForDrops(),
                     UniformInt.of(3, 7)), ModCreativeModTab.HORNSMOD_TAB);
 
+    public static final RegistryObject<Block> GEM_INFUSING_STATION = registerBlock("gem_infusing_station",
+            () -> new GemInfusingStationBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(6f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModTab.HORNSMOD_TAB);
+
+
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);
         return toReturn;
     }
-
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block, CreativeModeTab tab) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
     }
-
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
     }

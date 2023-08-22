@@ -2,9 +2,13 @@ package net.austinmhorn.hornsmod;
 
 import com.mojang.logging.LogUtils;
 import net.austinmhorn.hornsmod.block.ModBlocks;
+import net.austinmhorn.hornsmod.screen.GemInfusingStationScreen;
+import net.austinmhorn.hornsmod.block.entity.ModBlockEntities;
 import net.austinmhorn.hornsmod.item.ModItems;
+import net.austinmhorn.hornsmod.screen.ModMenuTypes;
 import net.austinmhorn.hornsmod.world.feature.ModConfiguredFeatures;
 import net.austinmhorn.hornsmod.world.feature.ModPlacedFeatures;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -35,6 +39,9 @@ public class HornsMod
         ModConfiguredFeatures.register(modEventBus);
         ModPlacedFeatures.register(modEventBus);
 
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -54,7 +61,7 @@ public class HornsMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            MenuScreens.register(ModMenuTypes.GEM_INFUSING_STATION_MENU.get(), GemInfusingStationScreen::new);
         }
     }
 }
