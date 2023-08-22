@@ -6,7 +6,7 @@ Austin Horn's Minecraft 1.19.2 Forge Mod
 
 Horn's Mod is a mod written for the hit game [Minecraft](https://minecraft.net/). It is built on top of the [Minecraft Forge](https://github.com/MinecraftForge) API.
 
-It greatly expands and improves the Minecart system in Minecraft. Adding many new blocks, entities, and features. Development started in August 2023, and is currently still an unreleased alpha with the first release estimated to be in late September.
+It greatly expands and improves the Minecraft experience, adding many new blocks, entities, and features. Development started in August 2023, and is currently still an unreleased alpha with the first release estimated to be in late September.
 
 The mod was created and is still currently maintained by the user going by the name **austinmhorn**.
 
