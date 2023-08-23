@@ -24,6 +24,18 @@ The mod was created and is still currently maintained by the user going by the n
 - Ruby
 - Pink Sapphire Ingot
 - Platinum Ingot
+- Ruby Pickaxe
+- Ruby Shovel
+- Ruby Axe
+- Ruby Sword
+- Pink Sapphire Pickaxe
+- Pink Sapphire Shovel
+- Pink Sapphire Axe
+- Pink Sapphire Sword
+- Platinum Pickaxe
+- Platinum Shovel
+- Platinum Axe
+- Platinum Sword
 
 #### New Blocks:
 - Ruby Block
@@ -53,15 +65,3 @@ To build, run:
 ```
 gradlew build
 ```
-
-## License
-
-Horn's Mod is licensed under a custom usage license tailored specifically for the project. It can be read [here](https://github.com/austinmhorn/hornsmod/blob/master/LICENSE.md).
-
- * Key things to keep in mind:
-  * You may **NOT** create works using the Horn's Mod code (source or binary) without austinmhorn's explicit permission except in the cases listed in this license.
-  * You may **NOT** create derivative Jars from Horn's Mod source to distribute to other users.
-  * You **MAY** use snippets of Horn's Mod Code posted on the Official Github in your own projects, but only if your project consists of less than 25% of Horn's Mod derived code. You must give credit to the Horn's Mod Project for the code used, including a link to the Github Project. Put this in your class file headers that contain Horn's Mod code, in your readme, and on the main download page.
-  * You may **NOT** use Horn's Mod Art Assets in other projects **unless** the project is intended to operate alongside Horn's Mod. Examples are Addons, Resource Packs and InterMod Integration.
-  * You **MAY** fork and edit the Github Project for the purpose of contributing to the Official Horn's Mod Project. You may **NOT** distribute any Jar created from a fork for any reason.
-  * All contributions to the Official Horn's Mod Project must be covered by a Contributor Licensing Agreement signed by the contributor.
