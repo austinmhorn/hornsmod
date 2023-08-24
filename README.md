@@ -92,3 +92,9 @@ Otherwise, here is how to mod Minecraft:
 - On Windows, search %appdata% in File Explorer and select .minecraft folder
 - If there isn’t a folder named “mods”, create one
 - Copy all mod .jar file(s) into mods folder
+
+## Debug Commands
+
+Teleport to moon dimension:
+
+    /execute in hornsmod:moon run tp Dev ~ ~ ~
