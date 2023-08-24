@@ -10,78 +10,31 @@ It greatly expands and improves the Minecraft experience, adding many new blocks
 
 The mod was created and is still currently maintained by the user going by the name **austinmhorn**.
 
-#### New Ores:
-- Ruby Ore
-- Deepslate Ruby Ore
-- Pink Sapphire Ore
-- Deepslate Pink Sapphire Ore
-- Platinum Ore
-- Deepslate Platinum Ore
-
-#### New Blocks:
-- Ruby Block
-- Pink Sapphire Block
-- Platinum Block
-
-#### New Items:
-- Ruby
-- Pink Sapphire Ingot
-- Platinum Ingot
-- Ruby Pickaxe
-- Ruby Shovel
-- Ruby Axe
-- Ruby Sword
-- Pink Sapphire Pickaxe
-- Pink Sapphire Shovel
-- Pink Sapphire Axe
-- Pink Sapphire Sword
-- Platinum Pickaxe
-- Platinum Shovel
-- Platinum Axe
-- Platinum Sword
-
-#### New Armor:
-- Ruby Helmet
-- Ruby Chestplate
-- Ruby Leggings
-- Ruby Boots
-- Pink Sapphire Helmet
-- Pink Sapphire Chestplate
-- Pink Sapphire Leggings
-- Pink Sapphire Boots
-- Platinum Helmet
-- Platinum Chestplate
-- Platinum Leggings
-- Platinum Boots
-
-## Issues
-
-Post only confirmed bugs [here](https://github.com/austinmhorn/hornsmod/issues). Do not post crash logs, you can post pastebin links to FML logs, but no crash logs.
+- 3 New Ores
+- 20+ New Blocks
+- 50+ New Items
+- New Armor Sets
+- New Tools
+- New Benches & Tables
+- Travel To New Dimensions & Planets
+- Custom Machinery & Technology 
 
 ## Installing
 
-The easy way:
-
-[Download](https://legacy.curseforge.com/minecraft/mc-mods/horns-mod) from CurseForge
-
-Or you can manually build the source code:
-
-Install [Gradle](https://gradle.org/install/), which comes with the [JDK 17](https://www.oracle.com/java/technologies/downloads/#java17) SDK.
+This project uses the build automation tool [Gradle](https://gradle.org/install/), which requires a Java JDK or JRE to be installed, version 6 or higher (to check, use java -version).
 
 #### MacOS
 
-    brew install gradle@7
+    brew install gradle@7.6.2
 
 #### Unix
 
-    sdk install gradle 7.6.1
-
----
+    sdk install gradle 7.6.2
 
 ## Building
 
     git clone --branch main --single-branch https://github.com/austinmhorn/hornsmod
-    (cd hornsmod; gradle build)
+    (cd hornsmod; ./gradlew wrapper --gradle-version 7.6.2)
 
 - You can find the .jar file(s) located in the *libs* directory:
 
@@ -89,20 +42,40 @@ Install [Gradle](https://gradle.org/install/), which comes with the [JDK 17](htt
 
 ## How To Use
 
-For sample testing, you can run the following command in the project root directory:
+For sample testing, just run this command in the project root directory:
 
-    gradle runClient
+    ./gradlew runClient
+
+### Use in Solo Worlds
+
+#### Add mods to client side
 
 - [Download] Minecraft Forge 1.19.2(https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.2.html)
 - Open the .jar file that was downloaded
   - Keep “Install client” selected and click install
-- For macOS, open Finder and go to */Users/replace_with_your_username/Library/Application Support/minecraft*
+- For MacOS, open Finder and go to */Users/replace_with_your_username/Library/Application Support/minecraft*
 - On Windows, search %appdata% in File Explorer and select .minecraft folder
 - If there isn’t a folder named “mods”, create one
 - Copy all mod .jar file(s) into mods folder
 
-## Debug Commands
+### Use in Multiplayer Worlds
 
-Teleport to moon dimension:
+- First, follow the "Add mods to client side" instructions above.
 
-    /execute in hornsmod:moon run tp Dev ~ ~ ~
+#### Add mods to server side
+
+- Open server FTP File Access
+- If there isn’t a folder named “mods”, create one
+- Copy all mod .jar file(s) into mods folder
+- Safely restart server
+
+## Troubleshooting
+
+- Minecraft isn't loading any mods?
+  - Make sure you have the forge installation selected in the Minecraft Launcher when you boot the game.
+- brew install gradle@7.6.2 failed?
+  - This happens on ARM arch for some reason. If you follow the manual Gradle installation instructions on their website that resolves the issue.
+
+## Issues
+
+Post only confirmed bugs [here](https://github.com/austinmhorn/hornsmod/issues). Do not post crash logs, you can post pastebin links to FML logs, but no crash logs.
