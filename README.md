@@ -2,8 +2,6 @@
 
 Austin Horn's Minecraft 1.19.2 Forge Mod
 
-[Download](https://legacy.curseforge.com/minecraft/mc-mods/horns-mod) on CurseForge
-
 ## What is Horn's Mod?
 
 Horn's Mod is a mod written for the hit game [Minecraft](https://minecraft.net/). It is built on top of the [Minecraft Forge](https://github.com/MinecraftForge) API.
@@ -60,24 +58,37 @@ The mod was created and is still currently maintained by the user going by the n
 
 Post only confirmed bugs [here](https://github.com/austinmhorn/hornsmod/issues). Do not post crash logs, you can post pastebin links to FML logs, but no crash logs.
 
-## Building
+## Installing
 
-Horn's Mod follows standard Forge conventions for setting up and building a project, with a couple additional details (details to come).
+The easy way:
+
+[Download](https://legacy.curseforge.com/minecraft/mc-mods/horns-mod) from CurseForge
+
+Or you can manually build thw source code:
 
 Install both [Gradle](https://gradle.org/install/) and [JDK 17](https://www.oracle.com/java/technologies/downloads/#java17)
 
-You can create a gradle.properties file in the project root with the following properties:
-```
-mcUsername=Steve
-mcPassword=ILoveNotch
-```
+    git clone --branch main --single-branch https://github.com/austinmhorn/hornsmod
+    (cd hornsmod; gradle build)
 
-Build project with:
-```
-gradle build
-```
+## How To Use
 
-Run project with:
-```
-gradle runClient
-```
+For sample testing, you can run the following command in the project root directory:
+
+    gradle runClient
+
+For actual game use:
+
+If you know how to mod minecraft, you can find the .jar file(s) in the folder:
+
+- *hornsmod/build/libs/*
+
+Otherwise, here is how to mod Minecraft:
+
+- [Download] Minecraft Forge 1.19.2(https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.2.html)
+- Open the .jar file that was downloaded
+  - Keep “Install client” selected and click install
+- For macOS, open Finder and go to */Users/replace_with_your_username/Library/Application Support/minecraft*
+- On Windows, search %appdata% in File Explorer and select .minecraft folder
+- If there isn’t a folder named “mods”, create one
+- Copy all mod .jar file(s) into mods folder
