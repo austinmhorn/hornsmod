@@ -64,7 +64,7 @@ The easy way:
 
 [Download](https://legacy.curseforge.com/minecraft/mc-mods/horns-mod) from CurseForge
 
-Or you can manually build thw source code:
+Or you can manually build the source code:
 
 Install both [Gradle](https://gradle.org/install/) and [JDK 17](https://www.oracle.com/java/technologies/downloads/#java17)
 
