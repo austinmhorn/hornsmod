@@ -23,11 +23,25 @@ The mod was created and is still currently maintained by the user going by the n
 
 This project uses the build automation tool [Gradle](https://gradle.org/install/), which requires a Java JDK or JRE to be installed, version 6 or higher (to check, use java -version).
 
-#### MacOS
+#### MacOS, Linux
 
+Use The Missing Package Manager for macOS (or Linux), [Homebrew](https://brew.sh)
+
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     brew install gradle@7.6.2
 
-#### Unix
+#### Windows
+
+Use the Windows command line installer [Scoop](https://scoop.sh)
+    
+    iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
+    scoop install gradle
+
+Note: if you get an error you might need to change the execution policy (i.e. enable Powershell) with the following command
+
+    Set-ExecutionPolicy RemoteSigned -scope CurrentUser
+
+#### Most Unix-based systems
 
     sdk install gradle 7.6.2
 
@@ -36,7 +50,7 @@ This project uses the build automation tool [Gradle](https://gradle.org/install/
     git clone --branch main --single-branch https://github.com/austinmhorn/hornsmod
     (cd hornsmod; ./gradlew wrapper --gradle-version 7.6.2)
 
-- You can find the .jar file(s) located in the *libs* directory:
+- **You can find the .jar file(s) located in the *libs* directory**
 
     *hornsmod/build/libs/*
 
