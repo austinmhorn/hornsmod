@@ -66,24 +66,32 @@ The easy way:
 
 Or you can manually build the source code:
 
-Install both [Gradle](https://gradle.org/install/) and [JDK 17](https://www.oracle.com/java/technologies/downloads/#java17)
+Install [Gradle](https://gradle.org/install/), which comes with the [JDK 17](https://www.oracle.com/java/technologies/downloads/#java17) SDK.
+
+#### MacOS
+
+    brew install gradle@7
+
+#### Unix
+
+    sdk install gradle 7.6.1
+
+---
+
+## Building
 
     git clone --branch main --single-branch https://github.com/austinmhorn/hornsmod
     (cd hornsmod; gradle build)
+
+- You can find the .jar file(s) located in the *libs* directory:
+
+    *hornsmod/build/libs/*
 
 ## How To Use
 
 For sample testing, you can run the following command in the project root directory:
 
     gradle runClient
-
-For actual game use:
-
-If you know how to mod minecraft, you can find the .jar file(s) in the folder:
-
-- *hornsmod/build/libs/*
-
-Otherwise, here is how to mod Minecraft:
 
 - [Download] Minecraft Forge 1.19.2(https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.2.html)
 - Open the .jar file that was downloaded
