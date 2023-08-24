@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "hornsmod:platinum_ore",
+    "hornsmod:platinum_block",
+    "hornsmod:deepslate_platinum_ore"
+  ]
+}
