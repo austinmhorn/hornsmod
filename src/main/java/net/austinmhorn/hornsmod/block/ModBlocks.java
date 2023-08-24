@@ -2,7 +2,7 @@ package net.austinmhorn.hornsmod.block;
 
 import net.austinmhorn.hornsmod.HornsMod;
 import net.austinmhorn.hornsmod.block.custom.GemInfusingStationBlock;
-import net.austinmhorn.hornsmod.item.ModCreativeModTab;
+import net.austinmhorn.hornsmod.item.ModCreativeModeTab;
 import net.austinmhorn.hornsmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -24,49 +24,49 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> RUBY_BLOCK = registerBlock("ruby_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModTab.HORNSMOD_TAB);
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.HORNSMOD_TAB);
 
     public static final RegistryObject<Block> RUBY_ORE = registerBlock("ruby_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops(),
-                    UniformInt.of(3, 7)), ModCreativeModTab.HORNSMOD_TAB);
+                    UniformInt.of(3, 7)), ModCreativeModeTab.HORNSMOD_TAB);
 
     public static final RegistryObject<Block> DEEPSLATE_RUBY_ORE = registerBlock("deepslate_ruby_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops(),
-                    UniformInt.of(3, 7)), ModCreativeModTab.HORNSMOD_TAB);
+                    UniformInt.of(3, 7)), ModCreativeModeTab.HORNSMOD_TAB);
 
     public static final RegistryObject<Block> PLATINUM_BLOCK = registerBlock("platinum_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModTab.HORNSMOD_TAB);
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.HORNSMOD_TAB);
 
     public static final RegistryObject<Block> PLATINUM_ORE = registerBlock("platinum_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops(),
-                    UniformInt.of(3, 7)), ModCreativeModTab.HORNSMOD_TAB);
+                    UniformInt.of(3, 7)), ModCreativeModeTab.HORNSMOD_TAB);
 
     public static final RegistryObject<Block> DEEPSLATE_PLATINUM_ORE = registerBlock("deepslate_platinum_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops(),
-                    UniformInt.of(3, 7)), ModCreativeModTab.HORNSMOD_TAB);
+                    UniformInt.of(3, 7)), ModCreativeModeTab.HORNSMOD_TAB);
 
     public static final RegistryObject<Block> PINK_SAPPHIRE_BLOCK = registerBlock("pink_sapphire_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModTab.HORNSMOD_TAB);
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.HORNSMOD_TAB);
 
     public static final RegistryObject<Block> PINK_SAPPHIRE_ORE = registerBlock("pink_sapphire_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops(),
-                    UniformInt.of(3, 7)), ModCreativeModTab.HORNSMOD_TAB);
+                    UniformInt.of(3, 7)), ModCreativeModeTab.HORNSMOD_TAB);
 
     public static final RegistryObject<Block> DEEPSLATE_PINK_SAPPHIRE_ORE = registerBlock("deepslate_pink_sapphire_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops(),
-                    UniformInt.of(3, 7)), ModCreativeModTab.HORNSMOD_TAB);
+                    UniformInt.of(3, 7)), ModCreativeModeTab.HORNSMOD_TAB);
 
     public static final RegistryObject<Block> GEM_INFUSING_STATION = registerBlock("gem_infusing_station",
             () -> new GemInfusingStationBlock(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(6f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModTab.HORNSMOD_TAB);
+                    .strength(6f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.HORNSMOD_TAB);
 
 
 
