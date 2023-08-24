@@ -20,6 +20,11 @@ The mod was created and is still currently maintained by the user going by the n
 - Platinum Ore
 - Deepslate Platinum Ore
 
+#### New Blocks:
+- Ruby Block
+- Pink Sapphire Block
+- Platinum Block
+
 #### New Items:
 - Ruby
 - Pink Sapphire Ingot
@@ -37,10 +42,19 @@ The mod was created and is still currently maintained by the user going by the n
 - Platinum Axe
 - Platinum Sword
 
-#### New Blocks:
-- Ruby Block
-- Pink Sapphire Block
-- Platinum Block
+#### New Armor:
+- Ruby Helmet
+- Ruby Chestplate
+- Ruby Leggings
+- Ruby Boots
+- Pink Sapphire Helmet
+- Pink Sapphire Chestplate
+- Pink Sapphire Leggings
+- Pink Sapphire Boots
+- Platinum Helmet
+- Platinum Chestplate
+- Platinum Leggings
+- Platinum Boots
 
 ## Issues
 
@@ -50,18 +64,20 @@ Post only confirmed bugs [here](https://github.com/austinmhorn/hornsmod/issues).
 
 Horn's Mod follows standard Forge conventions for setting up and building a project, with a couple additional details (details to come).
 
+Install both [Gradle](https://gradle.org/install/) and [JDK 17](https://www.oracle.com/java/technologies/downloads/#java17)
+
 You can create a gradle.properties file in the project root with the following properties:
 ```
 mcUsername=Steve
 mcPassword=ILoveNotch
 ```
 
-Initial Setup from the Command Line:
+Build project with:
 ```
-gradlew setupDecompWorkspace
+gradle build
 ```
 
-To build, run:
+Run project with:
 ```
-gradlew build
+gradle runClient
 ```
