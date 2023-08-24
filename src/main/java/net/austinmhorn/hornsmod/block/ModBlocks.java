@@ -68,8 +68,11 @@ public class ModBlocks {
             () -> new GemInfusingStationBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(6f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.HORNSMOD_TAB);
 
-
-
+    /* MOON BLOCKS */
+    public static final RegistryObject<Block> MOON_STONE = registerBlock("moon_stone",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops(),
+                    UniformInt.of(3, 7)), ModCreativeModeTab.HORNSMOD_TAB);
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);

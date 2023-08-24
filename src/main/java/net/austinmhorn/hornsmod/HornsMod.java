@@ -6,6 +6,8 @@ import net.austinmhorn.hornsmod.screen.GemInfusingStationScreen;
 import net.austinmhorn.hornsmod.block.entity.ModBlockEntities;
 import net.austinmhorn.hornsmod.item.ModItems;
 import net.austinmhorn.hornsmod.screen.ModMenuTypes;
+import net.austinmhorn.hornsmod.world.biomemods.ModBiomeModifiers;
+import net.austinmhorn.hornsmod.world.dimension.ModDimensions;
 import net.austinmhorn.hornsmod.world.feature.ModConfiguredFeatures;
 import net.austinmhorn.hornsmod.world.feature.ModPlacedFeatures;
 import net.minecraft.client.gui.screens.MenuScreens;
@@ -33,14 +35,24 @@ public class HornsMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        // Register ModItems
         ModItems.register(modEventBus);
+        // Register ModBlocks
         ModBlocks.register(modEventBus);
-
+        // Register ModConfiguredFeatures
         ModConfiguredFeatures.register(modEventBus);
-        ModPlacedFeatures.register(modEventBus);
 
+        // Register ModBLockEntities
         ModBlockEntities.register(modEventBus);
+        // Register ModMenuTypes
         ModMenuTypes.register(modEventBus);
+        // Register ModDimensions
+        ModDimensions.register();
+
+        // Register ModBiomeModifiers
+        ModBiomeModifiers.register(modEventBus);
+        // Register ModPlacedFeatures
+        ModPlacedFeatures.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
