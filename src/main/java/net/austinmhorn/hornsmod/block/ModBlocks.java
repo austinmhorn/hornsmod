@@ -2,6 +2,7 @@ package net.austinmhorn.hornsmod.block;
 
 import net.austinmhorn.hornsmod.HornsMod;
 import net.austinmhorn.hornsmod.block.custom.GemInfusingStationBlock;
+import net.austinmhorn.hornsmod.block.custom.SifterBlock;
 import net.austinmhorn.hornsmod.item.ModCreativeModeTab;
 import net.austinmhorn.hornsmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -66,6 +67,10 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> GEM_INFUSING_STATION = registerBlock("gem_infusing_station",
             () -> new GemInfusingStationBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(6f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.HORNSMOD_TAB);
+
+    public static final RegistryObject<Block> SIFTER = registerBlock("sifter",
+            () -> new SifterBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(6f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.HORNSMOD_TAB);
 
     /* MOON BLOCKS */
