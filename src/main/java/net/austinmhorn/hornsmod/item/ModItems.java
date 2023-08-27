@@ -41,18 +41,18 @@ public class ModItems {
 
     // Ruby Armor
     public static final RegistryObject<Item> RUBY_HELMET = ITEMS.register("ruby_helmet",
-            () -> new ArmorItem(ModArmorMaterials.RUBY, EquipmentSlot.HEAD,
+            () -> new ArmorItem(ModRubyArmorMaterials.RUBY, EquipmentSlot.HEAD,
                     new Item.Properties().tab(ModCreativeModeTab.HORNSMOD_TAB)));
     public static final RegistryObject<Item> RUBY_CHESTPLATE = ITEMS.register("ruby_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.RUBY, EquipmentSlot.CHEST,
+            () -> new ArmorItem(ModRubyArmorMaterials.RUBY, EquipmentSlot.CHEST,
                     new Item.Properties().tab(ModCreativeModeTab.HORNSMOD_TAB)));
     public static final RegistryObject<Item> RUBY_LEGGING = ITEMS.register("ruby_leggings",
-            () -> new ArmorItem(ModArmorMaterials.RUBY, EquipmentSlot.LEGS,
+            () -> new ArmorItem(ModRubyArmorMaterials.RUBY, EquipmentSlot.LEGS,
                     new Item.Properties().tab(ModCreativeModeTab.HORNSMOD_TAB)));
     public static final RegistryObject<Item> RUBY_BOOTS = ITEMS.register("ruby_boots",
-            () -> new ArmorItem(ModArmorMaterials.RUBY, EquipmentSlot.FEET,
+            () -> new ArmorItem(ModRubyArmorMaterials.RUBY, EquipmentSlot.FEET,
                     new Item.Properties().tab(ModCreativeModeTab.HORNSMOD_TAB)));
-    
+
     // Platinum Tools
     public static final RegistryObject<Item> PLATINUM_PICKAXE = ITEMS.register("platinum_pickaxe",
             () -> new PickaxeItem(ModToolTiers.PLATINUM, 2, 3f,
@@ -67,6 +67,20 @@ public class ModItems {
             () -> new SwordItem(ModToolTiers.PLATINUM, 2, 3f,
                     new Item.Properties().tab(ModCreativeModeTab.HORNSMOD_TAB).stacksTo(1)));
 
+    // Platinum Armor
+    public static final RegistryObject<Item> PLATINUM_HELMET = ITEMS.register("platinum_helmet",
+            () -> new ArmorItem(ModPlatinumArmorMaterials.PLATINUM, EquipmentSlot.HEAD,
+                    new Item.Properties().tab(ModCreativeModeTab.HORNSMOD_TAB)));
+    public static final RegistryObject<Item> PLATINUM_CHESTPLATE = ITEMS.register("platinum_chestplate",
+            () -> new ArmorItem(ModPlatinumArmorMaterials.PLATINUM, EquipmentSlot.CHEST,
+                    new Item.Properties().tab(ModCreativeModeTab.HORNSMOD_TAB)));
+    public static final RegistryObject<Item> PLATINUM_LEGGING = ITEMS.register("platinum_leggings",
+            () -> new ArmorItem(ModPlatinumArmorMaterials.PLATINUM, EquipmentSlot.LEGS,
+                    new Item.Properties().tab(ModCreativeModeTab.HORNSMOD_TAB)));
+    public static final RegistryObject<Item> PLATINUM_BOOTS = ITEMS.register("platinum_boots",
+            () -> new ArmorItem(ModPlatinumArmorMaterials.PLATINUM, EquipmentSlot.FEET,
+                    new Item.Properties().tab(ModCreativeModeTab.HORNSMOD_TAB)));
+
     // Pink Sapphire Tools
     public static final RegistryObject<Item> PINK_SAPPHIRE_PICKAXE = ITEMS.register("pink_sapphire_pickaxe",
             () -> new PickaxeItem(ModToolTiers.PINK_SAPPHIRE, 2, 3f,
@@ -80,6 +94,20 @@ public class ModItems {
     public static final RegistryObject<Item> PINK_SAPPHIRE_SWORD = ITEMS.register("pink_sapphire_sword",
             () -> new SwordItem(ModToolTiers.PINK_SAPPHIRE, 2, 3f,
                     new Item.Properties().tab(ModCreativeModeTab.HORNSMOD_TAB).stacksTo(1)));
+
+    // Pink Sapphire Armor
+    public static final RegistryObject<Item> PINK_SAPPHIRE_HELMET = ITEMS.register("pink_sapphire_helmet",
+            () -> new ArmorItem(ModPinkSapphireArmorMaterials.PINK_SAPPHIRE, EquipmentSlot.HEAD,
+                    new Item.Properties().tab(ModCreativeModeTab.HORNSMOD_TAB)));
+    public static final RegistryObject<Item> PINK_SAPPHIRE_CHESTPLATE = ITEMS.register("pink_sapphire_chestplate",
+            () -> new ArmorItem(ModPinkSapphireArmorMaterials.PINK_SAPPHIRE, EquipmentSlot.CHEST,
+                    new Item.Properties().tab(ModCreativeModeTab.HORNSMOD_TAB)));
+    public static final RegistryObject<Item> PINK_SAPPHIRE_LEGGING = ITEMS.register("pink_sapphire_leggings",
+            () -> new ArmorItem(ModPinkSapphireArmorMaterials.PINK_SAPPHIRE, EquipmentSlot.LEGS,
+                    new Item.Properties().tab(ModCreativeModeTab.HORNSMOD_TAB)));
+    public static final RegistryObject<Item> PINK_SAPPHIRE_BOOTS = ITEMS.register("pink_sapphire_boots",
+            () -> new ArmorItem(ModPinkSapphireArmorMaterials.PINK_SAPPHIRE, EquipmentSlot.FEET,
+                    new Item.Properties().tab(ModCreativeModeTab.HORNSMOD_TAB)));
 
     public static void register(IEventBus eventBus)
     {
