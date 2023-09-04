@@ -2,6 +2,7 @@ package net.austinmhorn.hornsmod.block.custom;
 
 import net.austinmhorn.hornsmod.block.entity.GemInfusingStationBlockEntity;
 import net.austinmhorn.hornsmod.block.entity.ModBlockEntities;
+import net.austinmhorn.hornsmod.block.entity.SifterBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
@@ -71,8 +72,8 @@ public class SifterBlock extends BaseEntityBlock {
     public void onRemove(BlockState pState, Level pLevel, BlockPos pPos, BlockState pNewState, boolean pIsMoving) {
         if (pState.getBlock() != pNewState.getBlock()) {
             BlockEntity blockEntity = pLevel.getBlockEntity(pPos);
-            if (blockEntity instanceof GemInfusingStationBlockEntity) {
-                ((GemInfusingStationBlockEntity) blockEntity).drops();
+            if (blockEntity instanceof SifterBlockEntity) {
+                ((SifterBlockEntity) blockEntity).drops();
             }
         }
         super.onRemove(pState, pLevel, pPos, pNewState, pIsMoving);
@@ -83,8 +84,8 @@ public class SifterBlock extends BaseEntityBlock {
                                  Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
         if (!pLevel.isClientSide()) {
             BlockEntity entity = pLevel.getBlockEntity(pPos);
-            if(entity instanceof GemInfusingStationBlockEntity) {
-                NetworkHooks.openScreen(((ServerPlayer)pPlayer), (GemInfusingStationBlockEntity)entity, pPos);
+            if(entity instanceof SifterBlockEntity) {
+                NetworkHooks.openScreen(((ServerPlayer)pPlayer), (SifterBlockEntity)entity, pPos);
             } else {
                 throw new IllegalStateException("Our Container provider is missing!");
             }
@@ -96,14 +97,14 @@ public class SifterBlock extends BaseEntityBlock {
     @Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-        return new GemInfusingStationBlockEntity(pos, state);
+        return new SifterBlockEntity(pos, state);
     }
 
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState state,
                                                                   BlockEntityType<T> type) {
-        return createTickerHelper(type, ModBlockEntities.GEM_INFUSING_STATION.get(),
-                GemInfusingStationBlockEntity::tick);
+        return createTickerHelper(type, ModBlockEntities.SIFTER.get(),
+                SifterBlockEntity::tick);
     }
 }

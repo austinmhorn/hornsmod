@@ -17,6 +17,11 @@ public class ModBlockEntities {
                     BlockEntityType.Builder.of(GemInfusingStationBlockEntity::new,
                             ModBlocks.GEM_INFUSING_STATION.get()).build(null));
 
+    public static final RegistryObject<BlockEntityType<SifterBlockEntity>> SIFTER =
+            BLOCK_ENTITIES.register("sifter", () ->
+                    BlockEntityType.Builder.of(SifterBlockEntity::new,
+                            ModBlocks.SIFTER.get()).build(null));
+
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);
