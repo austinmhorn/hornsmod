@@ -89,6 +89,9 @@ For sample testing, just run this command in the project root directory:
   - Make sure you have the forge installation selected in the Minecraft Launcher when you boot the game.
 - brew install gradle@7.6.2 failed?
   - This happens on ARM arch for some reason. If you follow the manual Gradle installation instructions on their website that resolves the issue.
+- permission denied: ./gradlew?
+  - Give the gradlew exectuable permissions by running:
+    - *chmod +x ./gradlew*
 
 ## Issues
 
